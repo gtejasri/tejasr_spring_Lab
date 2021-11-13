@@ -1,0 +1,78 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="employee" class="spring.lab1.model.Employee">
+		<property name="ID">
+			<value>12345</value>
+		</property>
+		<property name="Name">
+			<value>Harriet</value>
+		</property>
+		<property name="Salary">
+			<value>40000</value>
+		</property>
+		<property name="BU">
+			<value>PES-BU</value>
+		</property>
+		<property name="Age">
+			<value>30</value>
+		</property>
+	</bean>
+
+	<bean id="ID2" class="spring.lab1.point2.SBU">
+		<property name="sbuId">
+			<value>201</value>
+		</property>
+		<property name="sbuHead">
+			<value>KiranRao</value>
+		</property>
+		<property name="sbuName">
+			<value>Product Engineering Services</value>
+		</property>
+	</bean>
+
+	<bean id="ID1" class="spring.lab1.point2.Employee">
+		<property name="empId">
+			<value>1234</value>
+		</property>
+		<property name="empName">
+			<value>Hairet</value>
+		</property>
+		<property name="empSalary">
+			<value>40000</value>
+		</property>
+		<property name="empAge">
+			<value>40</value>
+		</property>
+		<property name="sbudetails">
+			<bean id="ID2" class="spring.lab1.point2.SBU">
+				<property name="sbuId" value="20"></property>
+				<property name="sbuName"
+					value="Product Engineering Services"></property>
+				<property name="sbuHead" value="Kiran Rao">
+
+				</property>
+			</bean>
+		</property>
+	</bean>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
